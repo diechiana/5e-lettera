@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettera di Lamentela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenitore">
+        <h1>Genera una Lettera di Lamentela</h1>
+        <form id="formLettera">
+            <label for="nome">Il tuo nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="scuola">Nome della scuola:</label>
+            <input type="text" id="scuola" required>
+
+            <label for="problema">Descrizione del problema:</label>
+            <textarea id="problema" rows="5" required></textarea>
+
+            <button type="submit">Genera Lettera</button>
+        </form>
+
+        <div id="letteraGenerata" class="lettera-nascosta">
+            <h2>Lettera Generata</h2>
+            <p id="testoLettera"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
